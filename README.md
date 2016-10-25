@@ -22,6 +22,7 @@ There is a very big difference between **Git** and **Github**
 7. Link Github and Cloud9, from on now you can sign in to cloud9 by clicking on the github icon(octocat)
 
 ### Cloud9 and Github SSH Key
+
 Now that you have an account for Github and Cloud9 we have to add an SSH key. This allows you to push your work to Github at a later time without having to put in your password everytime.
 1. First open Github and go to settings
 2. Look for SSH and GPG keys and click on that
@@ -29,6 +30,8 @@ Now that you have an account for Github and Cloud9 we have to add an SSH key. Th
 4. Click the gear icon in the top right corner and go to SSH Keys
 5. Copy the code there beginning with `ssh-rsa` and paste it into github 
 6. Go back to cloud9 and open up your workspace. In the terminal type `ssh -T git@github.com` and you should get a confirmation showing that you created the SSH Key
+
+
 ---
 ## Repository Setup
 
