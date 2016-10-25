@@ -26,7 +26,9 @@ Now that you have an account for Github and Cloud9 we have to add an SSH key. Th
 1. First open Github and go to settings
 2. Look for SSH and GPG keys and click on that
 3. Enter the name to be Cloud9 and then open up [Cloud9](c9.io)
-4. 
+4. Click the gear icon in the top right corner and go to SSH Keys
+5. Copy the code there beginning with `ssh-rsa` and paste it into github 
+6. Go back to cloud9 and open up your workspace. In the terminal type `ssh -T git@github.com` and you should get a confirmation showing that you created the SSH Key
 ---
 ## Repository Setup
 
