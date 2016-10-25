@@ -7,7 +7,7 @@ _by Kayla Matos_
 There is a very big difference between **Git** and **Github**
 * **Git:** Git is able to keep snapshots of your code, it runs in the command line, and it **does not require Github.**
 * **Github:** Github requires Git, and stores code in the website.
-
+s
 
 
 ---
@@ -15,7 +15,7 @@ There is a very big difference between **Git** and **Github**
 ### Making an Account
 1. First off go to [Github](github.com)
 2. Click the green _Sign up_ button in the upper right part of the screen.
-3. Make your username the same as your HSTAT email excluding the @hstat.org part
+3. Make your username the same as your HSTAT email without the @hstat.org part
 4. Verfiy your account or else it won't work properly
 5. Go to cloud9 and sign in 
 6. Click on settings and go to connected services
@@ -40,3 +40,14 @@ Now, it's time to create your first repository. Open up your workspace and make 
 ---
 ## Workflow & Commands
 `git status` is one of many commands necessary to properly use git. The command highlights in red files that are untracked and need to be added to the, it highlights in green the files that are being tracked and are ready to commit. This can be useful because it can remind you to do things you have accidentally forgotten to do. `git add` is also a necessity because it adds files to the staging area in order to be committed and saved. `git commit -m "message` is the command used to save the current version of your files and revert back to them if there are errors. It also includes a helpful reminder telling you what you changed with that commit. Another useful command is `git push` which allows you to send your commits to the cloud, which is basically github. Your code is stored here and remembered incase something happens to your hardrive and you lose all your files.
+
+---
+## Error Handling 
+### Did You Do git init In the Wrong Directory?
+You can use `rm -rf .git` to remove git. The reason this works is because the .git is a hidden file that is created when you do `git init`. The `rm` part of the code means to remove however the `-rf` part means to remove recursively and forcefully.
+### Do You Want to Remove a Repository? 
+First go to the parent directory of the repository you want to delete. Use `rm -rf` along with the name of the repository you want to delete. Once that is gone you can go to [Github](github.com) and delete the repository on Github to. Now it is officially gone from your cloud and your local workspace.
+
+---
+## Collaboration
+Github is a good way to work with others to come together and collaborate on one project. Or if you just want to take somebody elses work and take it in a different direction then you can do that and submit it to the user so that he can see the changes you made and decide if he also wants to use those changes. You can also clone other peoples work by going to your cloud9 terminal and type `git clone <url>`. This will allow you to have their work but if you try to push some of your changes, it will not allow you because you do not have permission. If you would like to be able to push the changes you made you can fork repositories and and make them your own. You can do this while you're looking at some other repository there will be a fork option at the top right corner. You click on that and you will have your own copy of the repo however it belongs to you. If you make a change that you think should be in the original project you can submit a pull. The owner can choose to include it in his work which would be him pulling your pull requests adding it to his work.
