@@ -7,7 +7,7 @@ _by Kayla Matos_
 There is a very big difference between **Git** and **Github**
 * **Git:** Git is able to keep snapshots of your code, it runs in the command line, and it **does not require Github.**
 * **Github:** Github requires Git, and stores code in the website.
-s
+
 
 
 ---
@@ -34,12 +34,12 @@ Now that you have an account for Github and Cloud9 we have to add an SSH key. Th
 
 ---
 ## Repository Setup
-Now, it's time to create your first repository. Open up your workspace and make a new directory. Go into that directory and type `git init` to initialize git in your directory. Create a file using `touch` and add some text to it. Make sure cloud9 saved your work and then go to the terminal to `add` and `commit` the file. When committing make sure the **message is short and is written in future tense** to help other users trying to collaborate with you understand what a certain commit did. To make your current local repository to a remote repository you must make a repository on github. Open up github and click the plus sign to make a repository. When making the repository make sure you name it the same as the one you have on github. Otherwise it will not work. After you create the repository it will take you to a screen. Somewhere there it will have _HTTPS_ highlighted, change this to have SSH highlighted. Lower on the page it should have two lines of code and ontop of them it should say "...or push an existing repository from the command line". Copy those two lines and paste them into your terminal on cloud9. After that you should be able to push your changes from cloud9 to github.
+Now, it's time to create your first repository. Open up your workspace and make a new directory. Go into that directory and type `git init` to initialize git in your directory. Create a file using `touch` and add some text to it. Make sure cloud9 saved your work and then go to the terminal to `add` and `commit` the file. When committing make sure the **message is short and is written in future tense** to help other users trying to collaborate with you understand what a certain commit did. To make your current local repository to a remote repository you must make a repository on github. Open up github and click the plus sign to make a repository. When making the repository make sure you name it the same as the one you have on github. **Otherwise it will not work**. After you create the repository it will take you to a screen. Somewhere there it will have _HTTPS_ highlighted, change this to have SSH highlighted. Lower on the page it should have two lines of code and ontop of them it should say "...or push an existing repository from the command line". Copy those two lines and paste them into your terminal on cloud9. After that you should be able to push your changes from cloud9 to github.
 
 
 ---
 ## Workflow & Commands
-`git status` is one of many commands necessary to properly use git. The command highlights in red files that are untracked and need to be added to the, it highlights in green the files that are being tracked and are ready to commit. This can be useful because it can remind you to do things you have accidentally forgotten to do. `git add` is also a necessity because it adds files to the staging area in order to be committed and saved. `git commit -m "message` is the command used to save the current version of your files and revert back to them if there are errors. It also includes a helpful reminder telling you what you changed with that commit. Another useful command is `git push` which allows you to send your commits to the cloud, which is basically github. Your code is stored here and remembered incase something happens to your hardrive and you lose all your files.
+`git status` is one of many commands necessary to properly use git. It is an optional command. The command highlights in red files that are untracked and need to be added to the, it highlights in green the files that are being tracked and are ready to commit. This can be useful because it can remind you to do things you have accidentally forgotten to do. `git add` is also a necessity because it adds files to the staging area in order to be committed and saved. `git commit -m "message` is the command used to save the current version of your files and revert back to them if there are errors. It also includes a helpful reminder telling you what you changed with that commit. Another useful command is `git push` which allows you to send your commits to the cloud, which is basically github. Your code is stored here and remembered incase something happens to your hardrive and you lose all your files.
 
 ---
 ## Error Handling 
