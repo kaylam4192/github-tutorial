@@ -7,7 +7,7 @@ _by Kayla Matos_
 There is a very big difference between **Git** and **Github**
 * **Git:** Git is able to keep snapshots of your code, it runs in the command line, and it **does not require Github.**
 * **Github:** Github requires Git, and stores code in the website.
-s
+
 
 
 ---
