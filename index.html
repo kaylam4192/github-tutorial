@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Github tutorial by kaylam4192</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/kaylam4192/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Github tutorial</h1>
+            <h2>git ready 2 rumble</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/kaylam4192/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/kaylam4192/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Kayla Matos</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>There is a very big difference between <strong>Git</strong> and <strong>Github</strong></p>
+
+<ul>
+<li>
+<strong>Git:</strong> Git is able to keep snapshots of your code, it runs in the command line, and it <strong>does not require Github.</strong>
+</li>
+<li>
+<strong>Github:</strong> Github requires Git, and stores code in the website.
+s</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h3>
+<a id="making-an-account" class="anchor" href="#making-an-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making an Account</h3>
+
+<ol>
+<li>First off go to <a href="github.com">Github</a>
+</li>
+<li>Click the green <em>Sign up</em> button in the upper right part of the screen.</li>
+<li>Make your username the same as your HSTAT email without the @hstat.org part</li>
+<li>Verfiy your account or else it won't work properly</li>
+<li>Go to cloud9 and sign in </li>
+<li>Click on settings and go to connected services</li>
+<li>Link Github and Cloud9, from on now you can sign in to cloud9 by clicking on the github icon(octocat)</li>
+</ol>
+
+<h3>
+<a id="cloud9-and-github-ssh-key" class="anchor" href="#cloud9-and-github-ssh-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cloud9 and Github SSH Key</h3>
+
+<p>Now that you have an account for Github and Cloud9 we have to add an SSH key. This allows you to push your work to Github at a later time without having to put in your password everytime.</p>
+
+<ol>
+<li>First open Github and go to settings</li>
+<li>Look for SSH and GPG keys and click on that</li>
+<li>Enter the name to be Cloud9 and then open up <a href="c9.io">Cloud9</a>
+</li>
+<li>Click the gear icon in the top right corner and go to SSH Keys</li>
+<li>Copy the code there beginning with <code>ssh-rsa</code> and paste it into github </li>
+<li>Go back to cloud9 and open up your workspace. In the terminal type <code>ssh -T git@github.com</code> and you should get a confirmation showing that you created the SSH Key</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>Now, it's time to create your first repository. Open up your workspace and make a new directory. Go into that directory and type <code>git init</code> to initialize git in your directory. Create a file using <code>touch</code> and add some text to it. Make sure cloud9 saved your work and then go to the terminal to <code>add</code> and <code>commit</code> the file. When committing make sure the <strong>message is short and is written in future tense</strong> to help other users trying to collaborate with you understand what a certain commit did. To make your current local repository to a remote repository you must make a repository on github. Open up github and click the plus sign to make a repository. When making the repository make sure you name it the same as the one you have on github. Otherwise it will not work. After you create the repository it will take you to a screen. Somewhere there it will have <em>HTTPS</em> highlighted, change this to have SSH highlighted. Lower on the page it should have two lines of code and ontop of them it should say "...or push an existing repository from the command line". Copy those two lines and paste them into your terminal on cloud9. After that you should be able to push your changes from cloud9 to github.</p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p><code>git status</code> is one of many commands necessary to properly use git. The command highlights in red files that are untracked and need to be added to the, it highlights in green the files that are being tracked and are ready to commit. This can be useful because it can remind you to do things you have accidentally forgotten to do. <code>git add</code> is also a necessity because it adds files to the staging area in order to be committed and saved. <code>git commit -m "message</code> is the command used to save the current version of your files and revert back to them if there are errors. It also includes a helpful reminder telling you what you changed with that commit. Another useful command is <code>git push</code> which allows you to send your commits to the cloud, which is basically github. Your code is stored here and remembered incase something happens to your hardrive and you lose all your files.</p>
+
+<hr>
+
+<h2>
+<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Error Handling</h2>
+
+<h3>
+<a id="did-you-do-git-init-in-the-wrong-directory" class="anchor" href="#did-you-do-git-init-in-the-wrong-directory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Did You Do git init In the Wrong Directory?</h3>
+
+<p>You can use <code>rm -rf .git</code> to remove git. The reason this works is because the .git is a hidden file that is created when you do <code>git init</code>. The <code>rm</code> part of the code means to remove however the <code>-rf</code> part means to remove recursively and forcefully.</p>
+
+<h3>
+<a id="do-you-want-to-remove-a-repository" class="anchor" href="#do-you-want-to-remove-a-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Do You Want to Remove a Repository?</h3>
+
+<p>First go to the parent directory of the repository you want to delete. Use <code>rm -rf</code> along with the name of the repository you want to delete. Once that is gone you can go to <a href="github.com">Github</a> and delete the repository on Github to. Now it is officially gone from your cloud and your local workspace.</p>
+
+<hr>
+
+<h2>
+<a id="collaboration" class="anchor" href="#collaboration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collaboration</h2>
+
+<p>Github is a good way to work with others to come together and collaborate on one project. Or if you just want to take somebody elses work and take it in a different direction then you can do that and submit it to the user so that he can see the changes you made and decide if he also wants to use those changes. You can also clone other peoples work by going to your cloud9 terminal and type <code>git clone &lt;url&gt;</code>. This will allow you to have their work but if you try to push some of your changes, it will not allow you because you do not have permission. If you would like to be able to push the changes you made you can fork repositories and and make them your own. You can do this while you're looking at some other repository there will be a fork option at the top right corner. You click on that and you will have your own copy of the repo however it belongs to you. If you make a change that you think should be in the original project you can submit a pull. The owner can choose to include it in his work which would be him pulling your pull requests adding it to his work.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/kaylam4192">kaylam4192</a> can be found on <a href="https://github.com/kaylam4192/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
